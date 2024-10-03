@@ -1,0 +1,90 @@
+.just-home {
+  justify-content: center;
+  text-align: center;
+  
+
+  &-image {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &-intro {
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+    &-title {
+      font-size: 20px;
+      position: relative;
+      border-radius: 4px;
+      padding: 4px 10px;
+      border: 2px;
+      gap: 2px;
+      border-style: solid;
+      height: 2px;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    &-desc {
+    
+
+      position: relative;
+    }
+    &-little {
+         
+      font-size: 4px;
+      position: relative;
+    }
+  }
+  &-search {
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 3px;
+    border: 15px;
+    gap: 300px;
+    border-radius: 15px;
+    position: absolute;
+    &-logo {
+      justify-content: start;
+      position: relative;
+      justify-content: end;
+      background-color: #e7c873;
+      border-radius: 15px;
+      position: relative;
+    
+    }
+  }
+  &-three {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    gap: 30px;
+    &-1 {
+      position: relative;
+      gap: 20px;
+      padding: 3px;
+
+      &-img {
+        justify-content: start;
+      }
+    }
+    &-2 {
+      position: relative;
+      gap: 2px;
+      padding: 3px;
+    }
+    &-3 {
+      position: relative;
+    }
+  }
+}
