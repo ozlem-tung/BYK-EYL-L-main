@@ -1,90 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Hasan Ünal</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-            <link rel="stylesheet" href="assets/css/style.min.css">
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        
-        </head>
-        <body>
-            <header>
-                <nav class="navbar navbar-expand-lg d-flex  justify-content-center ">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">Navbar w/ text</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarText">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                            </ul>
-                            <span class="navbar-text">
-                                Navbar text with an inline element
-                            </span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Ünal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header class="fixed-top p-2 ">
+        <nav class="navbar navbar-expand-lg d-flex  justify-content-center ">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar w/ text</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Navbar text with an inline element
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="hero-slider">
+            <div class="hero-slider-content">
+                <div class="hero-slider-content-info">
+                    LET US GUIDE YOUR HOME
+                </div>
+                <div class="hero-slider-content-title">
+                    Believe in finding it
+                </div>
+                <div class="hero-slider-content-desc">
+                    Search properties for sale and to rent in the UK
+                </div>
+                <div class="hero-slider-content-search">
+                    <input type="text" name="" id="" placeholder="Arama...">
+                    <button type="submit">
+                        <i class="icon-search"></i>
+                    </button>
+                </div>
+                <div class="hero-slider-content-tag">
+                    <span class="text-white">What are you looking for?</span>
+                    <div class="d-flex gap-2">
+                        <div class="hero-slider-content-tag-link">
+                            <div class="tag-icon">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/tag/home.svg"
+                                    class="lazyload" alt="Home">
+                            </div>
+                            <span>Modern Villa</span>
+                        </div>
+                        <div class="hero-slider-content-tag-link">
+                            <div class="tag-icon">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/tag/apartman.svg"
+                                    class="lazyload" alt="Home">
+                            </div>
+                            <span>Modern Villa</span>
+                        </div>
+                        <div class="hero-slider-content-tag-link">
+                            <div class="tag-icon">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/tag/house.svg"
+                                    class="lazyload" class="lazyload" class="lazyload" alt="Home">
+                            </div>
+                            <span>Modern Villa</span>
                         </div>
                     </div>
-                </nav>
-                <section>
-                    <div class="container">
-                        <div class="just-home d-flex flex-column">
-                            <div class="just-home-image d-flex">
-                                <img src="assets/img/image/navbar.png" alt="navbar">
-                            </div>
-                            <div class="just-home-intro  d-flex flex-column ">
-                                <div class="just-home-intro-title d-flex">
-                                    <span>LET US GUIDE YOUR HOME</span>
-                                </div>
-                                <div class="just-home-intro-desc d-flex">
-                                    <span>Believe in finding it</span>
-                                </div>
-                                <div class="just-home-intro-little d-flex">
-                                    <span>Search properties for sale and to rent in the UK</span>
-                                </div>
-                            </div>
-                            <div class="just-home-search d-flex">
-                                <span>search</span>
-                                <div class="just-home-search-logo ">
-                                    <img src="assets/img/icon/Vsearch.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="just-home-three d-flex ">
-                                <div class="just-home-three-1">
-                                    <span>Modern Villa</span>
-                                    <img src="assets/img/icon/just-home-icon.png" alt="">
-                                </div>
-                                <div class="just-home-three-2">
-                                    <span>Modern Villa</span>
-                                    <img src="assets/img/icon/just-home-icon.png" alt="">
-                                </div>
-                                <div class="just-home-three-3">
-                                    <span>Modern Villa</span>
-                                    <img src="assets/img/icon/just-home-icon.png" alt="">
-                                </div>
-                                    
-                            </div>
-                           
+                </div>
+            </div>
+            <img src="assets/img/image/loading.svg" data-src="assets/img/image/navbar.png" class="lazyload"
+                alt="Slider">
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <span class="fs-2 fw-semibold">Why You Should Work With Us</span>
+                <span class="fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+
+            </div>
+            <div class="col-10 mx-auto py-5">
+                <div class="row d-flex">
+                    <div class="col-4 ">
+                        <div class="work-card">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/icon/range.png"
+                                class="lazyload" class="lazyload" alt="">
+                            <span class="fs-5 fw-bold">Wide Range of Properties</span>
+                            <span class="fw-light"> We offer expert legal help for all related property
+                                items in Dubai.</span>
                         </div>
                     </div>
-                </section>
-            </header>
-        
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
-        
-        </body>
+                    <div class="col-4">
+                        <div class="work-card">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/icon/range.png"
+                                class="lazyload" class="lazyload" alt="">
+                            <span class="fs-5 fw-bold">Buy or Rent Homes</span>
+                            <span class="fw-light">We sell your home at the best market price and very
+                                quickly as well.</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="work-card">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/icon/range.png"
+                                class="lazyload" class="lazyload" alt="">
+                            <span class="fs-5 fw-bold">Trusted by Thousands</span>
+                            <span class="fw-light">We offer you free consultancy to get a loan for your
+                                new home.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <span class="fs-2 fw-semibold">Why You Should Work With Us</span>
+                <span class="fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="product-card">
+                        <div class="product-card-tag">
+                            <span class="bg-green">For Sale</span>
+                            <span class="bg-gold">Featured</span>
+                        </div>
+                        <div class="product-card-content">
+                            <div class="product-card-content-title">
+                                <span>Luxury Family Home</span>
+                            </div>
+                            <div class="product-card-content-location ">
+                                <i class="icon icon-location"></i>
+                                <span>1800-1818 79th St</span>
+
+                            </div>
+                            <div class="d-flex">
+                                <div class="product-card-content-price">
+                                    <span>$395,000</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="product-card-content-property">
+                                        <i class="icon icon-location"></i>
+                                        <span>4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-image">
+                            <img src="assets/img/image/loading.svg" data-src="assets/img/luxury-family.png"
+                                class="lazyload" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section class="py-6">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <span class="fs-2 fw-semibold">Find Properties in These Cities</span>
+                <span class="fs-6 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+            </div>
+            <div class="swiper slider--find-property">
+                <div class="swiper-wrapper pb-5">
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <div class="slider-card-content d-flex flex-column">
+                                <span class="fs-2">Chicago</span>
+                                <span class="fs-3">Chicago</span>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/image/slider-1.svg"
+                                    class="lazyload" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <div class="slider-card-content d-flex flex-column">
+                                <span class="fs-2">Chicago</span>
+                                <span class="fs-3">Chicago</span>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/image/slider-1.svg"
+                                    class="lazyload" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <div class="slider-card-content d-flex flex-column">
+                                <span class="fs-2">Chicago</span>
+                                <span class="fs-3">Chicago</span>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/image/slider-1.svg"
+                                    class="lazyload" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <div class="slider-card-content d-flex flex-column">
+                                <span class="fs-2">Chicago</span>
+                                <span class="fs-3">Chicago</span>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/image/slider-1.svg"
+                                    class="lazyload" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <div class="slider-card-content d-flex flex-column">
+                                <span class="fs-2">Chicago</span>
+                                <span class="fs-3">Chicago</span>
+                            </div>
+                            <div class="slider-card-image">
+                                <img src="assets/img/image/loading.svg" data-src="assets/img/image/slider-1.svg"
+                                    class="lazyload" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper(".slider--find-property", {
+                sliderPerView: 5,
+                speaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+
+            });
+        </script>
+    </section>
+
+    <section class="py-5 how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 ">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="how-it-work-card-one">
+                                <img src="assets/img/how-it-work/content-1.jpg" alt="content">
+                                <div class="how-it-work-card-one-content">
+                                    <div class="how-it-work-card-one-content-icon">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11 18.923H4.08784C3.69144 18.923 3.36937 18.7878 3.12162 18.5173C2.87387 18.2468 2.75 17.9394 2.75 17.5952V8.37423L9.73649 2.25151C10.0833 1.95644 10.5045 1.80891 11 1.80891C11.4955 1.80891 11.9167 1.95644 12.2635 2.25151L21.1081 9.99711C21.2072 10.0955 21.3311 10.1324 21.4797 10.1078C21.6284 10.0832 21.7523 10.0217 21.8514 9.92335C21.9505 9.82499 21.9876 9.70204 21.9628 9.55451C21.9381 9.40697 21.8761 9.28403 21.777 9.18567L20.2905 7.93162V2.69412C20.2905 1.95644 20.018 1.31712 19.473 0.776162C18.9279 0.2352 18.2838 -0.0229867 17.5405 0.00160253C16.7973 0.0261917 16.1655 0.296673 15.6453 0.813046C15.125 1.32942 14.8401 1.95644 14.7905 2.69412V3.13673L12.9324 1.51384C12.3874 1.02205 11.7432 0.776162 11 0.776162C10.2568 0.776162 9.61261 1.02205 9.06757 1.51384L0.222973 9.18567C0.0743243 9.28403 0 9.40697 0 9.55451C0 9.70204 0.0495495 9.82499 0.148649 9.92335C0.247748 10.0217 0.371622 10.0832 0.52027 10.1078C0.668919 10.1324 0.792793 10.0955 0.891892 9.99711L1.70946 9.3332V17.5952C1.70946 18.2345 1.94482 18.7878 2.41554 19.2549C2.88626 19.7221 3.44369 19.9557 4.08784 19.9557H11C11.1486 19.9557 11.2725 19.9066 11.3716 19.8082C11.4707 19.7098 11.5203 19.5869 11.5203 19.4394C11.5203 19.2918 11.4707 19.1689 11.3716 19.0705C11.2725 18.9722 11.1486 18.923 11 18.923ZM15.8311 2.69412C15.8806 2.20234 16.0664 1.79661 16.3885 1.47695C16.7106 1.15729 17.107 1.00976 17.5777 1.03435C18.0484 1.05894 18.4448 1.23106 18.7669 1.55072C19.089 1.87038 19.25 2.25151 19.25 2.69412V6.97264L15.8311 4.02194V2.69412ZM11 5.20222C10.3063 5.20222 9.71171 5.44811 9.21622 5.93989C8.72072 6.43168 8.47297 7.02182 8.47297 7.71032C8.47297 8.39881 8.72072 8.98896 9.21622 9.48074C9.71171 9.97252 10.3063 10.2184 11 10.2184C11.6937 10.2184 12.2883 9.97252 12.7838 9.48074C13.2793 8.98896 13.527 8.39881 13.527 7.71032C13.527 7.02182 13.2793 6.43168 12.7838 5.93989C12.2883 5.44811 11.6937 5.20222 11 5.20222ZM12.4865 7.71032C12.4865 8.15292 12.3378 8.50947 12.0405 8.77995C11.7432 9.05043 11.3964 9.18567 11 9.18567C10.6036 9.18567 10.2568 9.05043 9.95946 8.77995C9.66216 8.50947 9.51351 8.16522 9.51351 7.7472C9.51351 7.32918 9.66216 6.97264 9.95946 6.67757C10.2568 6.3825 10.6036 6.23496 11 6.23496C11.3964 6.23496 11.7432 6.3825 12.0405 6.67757C12.3378 6.97264 12.4865 7.31689 12.4865 7.71032ZM21.8514 19.1443L20.0676 17.3001C20.5135 16.6608 20.7365 15.9477 20.7365 15.1608C20.7365 14.1773 20.3773 13.3412 19.6588 12.6527C18.9403 11.9642 18.0856 11.62 17.0946 11.62C16.1036 11.62 15.2489 11.9642 14.5304 12.6527C13.8119 13.3412 13.4527 14.1896 13.4527 15.1977C13.4527 16.2059 13.8119 17.0542 14.5304 17.7427C15.2489 18.4312 16.1036 18.7755 17.0946 18.7755C17.9369 18.7755 18.6802 18.5296 19.3243 18.0378L21.0338 19.8082C21.1329 19.9066 21.2568 19.968 21.4054 19.9926C21.5541 20.0172 21.6903 19.9803 21.8142 19.882C21.9381 19.7836 22 19.6607 22 19.5131C22 19.3656 21.9505 19.2427 21.8514 19.1443ZM17.0946 17.7427C16.4009 17.7427 15.7939 17.4968 15.2736 17.005C14.7534 16.5133 14.4932 15.9108 14.4932 15.1977C14.4932 14.4846 14.7534 13.8822 15.2736 13.3904C15.7939 12.8986 16.4133 12.6527 17.1318 12.6527C17.8502 12.6527 18.4572 12.8986 18.9527 13.3904C19.4482 13.8822 19.6959 14.4846 19.6959 15.1977C19.6959 15.9108 19.4482 16.5133 18.9527 17.005C18.4572 17.4968 17.8378 17.7427 17.0946 17.7427Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <span>Properties For Sel</span>
+                                        <b>14</b>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="how-it-work-card-two">
+                                <img src="assets/img/how-it-work/content-2.jpg" alt="content">
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="how-it-work-card-three">
+                                <img src="assets/img/how-it-work/content-3.jpg" alt="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 px-3">
+                    <div class="d-flex flex-column justify-content-center h-100">
+                        <span class=" d-block fs-1 fw-semibold">
+                            How It works?<br>
+                            Find a perfect home
+                        </span>
+                        <span class=" d-block fs-5 fw-light mb-5">
+                            Pellentesque egestas elementum egestas faucibus sem. Velit
+                            nunc egestas ut morbi. Leo diam diam.
+                        </span>
+
+                        <div class="how-it-work-property mb-3 pt-3">
+                            <div class="how-it-work-property-icon d-flex">
+                                <i class="icon icon-home "></i>
+                            </div>
+                            <div class="d-felx flex-column">
+                                <span class="d-block fs-2 fw-semibold lh-1">Find Real Estate</span>
+                                <span class=" d-block fs-6 fw-light">
+                                    Sumo petentium ut per, at his wisim utinam
+                                    adipiscing. Est ei graeco
+                                </span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property mb-3 pt-3">
+                            <div class="how-it-work-property-icon d-flex">
+                                <i class="icon icon-person "></i>
+                            </div>
+                            <div class="d-felx flex-column ">
+                                <span class="d-block fs-2 fw-semibold">Meet Realtor</span>
+                                <span class=" d-block fs-6 fw-light">
+                                    Sumo petentium ut per, at his wisim utinam
+                                    adipiscing. Est ei graeco
+                                </span>
+                            </div>
+                        </div>
+                        <div class="how-it-work-property mb-3 pt-3">
+                            <div class="how-it-work-property-icon d-flex">
+                                <i class="icon icon-home "></i>
+                            </div>
+                            <div class="d-felx flex-column ">
+                                <span class="d-block fs-2 fw-semibold">Take The Keys</span>
+                                <span class=" d-block fs-6 fw-light">
+                                    Sumo petentium ut per, at his wisim utinam
+                                    adipiscing. Est ei graeco
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container py-5 mb-3 why-you-should">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-5 why-you-should-describe">
+                            <div class="why-you-should-describe-one">
+                                <img src="assets/img/why-you-should/family.svg" alt="">
+                            </div>
+                            <div class="why-you-should-describe-two ">
+                                <div class="why-you-should-describe-two-icon">
+                                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 18.923H4.08784C3.69144 18.923 3.36937 18.7878 3.12162 18.5173C2.87387 18.2468 2.75 17.9394 2.75 17.5952V8.37423L9.73649 2.25151C10.0833 1.95644 10.5045 1.80891 11 1.80891C11.4955 1.80891 11.9167 1.95644 12.2635 2.25151L21.1081 9.99711C21.2072 10.0955 21.3311 10.1324 21.4797 10.1078C21.6284 10.0832 21.7523 10.0217 21.8514 9.92335C21.9505 9.82499 21.9876 9.70204 21.9628 9.55451C21.9381 9.40697 21.8761 9.28403 21.777 9.18567L20.2905 7.93162V2.69412C20.2905 1.95644 20.018 1.31712 19.473 0.776162C18.9279 0.2352 18.2838 -0.0229867 17.5405 0.00160253C16.7973 0.0261917 16.1655 0.296673 15.6453 0.813046C15.125 1.32942 14.8401 1.95644 14.7905 2.69412V3.13673L12.9324 1.51384C12.3874 1.02205 11.7432 0.776162 11 0.776162C10.2568 0.776162 9.61261 1.02205 9.06757 1.51384L0.222973 9.18567C0.0743243 9.28403 0 9.40697 0 9.55451C0 9.70204 0.0495495 9.82499 0.148649 9.92335C0.247748 10.0217 0.371622 10.0832 0.52027 10.1078C0.668919 10.1324 0.792793 10.0955 0.891892 9.99711L1.70946 9.3332V17.5952C1.70946 18.2345 1.94482 18.7878 2.41554 19.2549C2.88626 19.7221 3.44369 19.9557 4.08784 19.9557H11C11.1486 19.9557 11.2725 19.9066 11.3716 19.8082C11.4707 19.7098 11.5203 19.5869 11.5203 19.4394C11.5203 19.2918 11.4707 19.1689 11.3716 19.0705C11.2725 18.9722 11.1486 18.923 11 18.923ZM15.8311 2.69412C15.8806 2.20234 16.0664 1.79661 16.3885 1.47695C16.7106 1.15729 17.107 1.00976 17.5777 1.03435C18.0484 1.05894 18.4448 1.23106 18.7669 1.55072C19.089 1.87038 19.25 2.25151 19.25 2.69412V6.97264L15.8311 4.02194V2.69412ZM11 5.20222C10.3063 5.20222 9.71171 5.44811 9.21622 5.93989C8.72072 6.43168 8.47297 7.02182 8.47297 7.71032C8.47297 8.39881 8.72072 8.98896 9.21622 9.48074C9.71171 9.97252 10.3063 10.2184 11 10.2184C11.6937 10.2184 12.2883 9.97252 12.7838 9.48074C13.2793 8.98896 13.527 8.39881 13.527 7.71032C13.527 7.02182 13.2793 6.43168 12.7838 5.93989C12.2883 5.44811 11.6937 5.20222 11 5.20222ZM12.4865 7.71032C12.4865 8.15292 12.3378 8.50947 12.0405 8.77995C11.7432 9.05043 11.3964 9.18567 11 9.18567C10.6036 9.18567 10.2568 9.05043 9.95946 8.77995C9.66216 8.50947 9.51351 8.16522 9.51351 7.7472C9.51351 7.32918 9.66216 6.97264 9.95946 6.67757C10.2568 6.3825 10.6036 6.23496 11 6.23496C11.3964 6.23496 11.7432 6.3825 12.0405 6.67757C12.3378 6.97264 12.4865 7.31689 12.4865 7.71032ZM21.8514 19.1443L20.0676 17.3001C20.5135 16.6608 20.7365 15.9477 20.7365 15.1608C20.7365 14.1773 20.3773 13.3412 19.6588 12.6527C18.9403 11.9642 18.0856 11.62 17.0946 11.62C16.1036 11.62 15.2489 11.9642 14.5304 12.6527C13.8119 13.3412 13.4527 14.1896 13.4527 15.1977C13.4527 16.2059 13.8119 17.0542 14.5304 17.7427C15.2489 18.4312 16.1036 18.7755 17.0946 18.7755C17.9369 18.7755 18.6802 18.5296 19.3243 18.0378L21.0338 19.8082C21.1329 19.9066 21.2568 19.968 21.4054 19.9926C21.5541 20.0172 21.6903 19.9803 21.8142 19.882C21.9381 19.7836 22 19.6607 22 19.5131C22 19.3656 21.9505 19.2427 21.8514 19.1443ZM17.0946 17.7427C16.4009 17.7427 15.7939 17.4968 15.2736 17.005C14.7534 16.5133 14.4932 15.9108 14.4932 15.1977C14.4932 14.4846 14.7534 13.8822 15.2736 13.3904C15.7939 12.8986 16.4133 12.6527 17.1318 12.6527C17.8502 12.6527 18.4572 12.8986 18.9527 13.3904C19.4482 13.8822 19.6959 14.4846 19.6959 15.1977C19.6959 15.9108 19.4482 16.5133 18.9527 17.005C18.4572 17.4968 17.8378 17.7427 17.0946 17.7427Z" fill="white"></path>
+                                    </svg>
+                                </div>
+                                <div class="why-you-should-describe-two-desc">
+                                    properties for sel
+                                </div>
+                                <div class="why-you-should-describe-two-price">
+                                    14K
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img src="assets/img/why-you-should/home.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="d-flex flex-column align-items-center gap-2 justify-content-center">
+                        <span class="d-block fs-2 fw-semibold">Why You Should Work
+                            With Us</span>
+                        <span class="d-blockfs-6 fw-light">Pellentesque egestas elementum egestas faucibus sem. Velit
+                            nunc egestas ut morbi. Leo diam diam.</span>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-6">
+                            <div class="why-you-should-cart-link d-flex">
+                                <div class="card-link">
+                                    <img src="assets/img/why-you-should/tick.svg" alt="">
+                                </div>
+                                <span>100% Secure</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="why-you-should-cart-link d-flex">
+                                <div class="card-link">
+                                    <img src="assets/img/why-you-should/tick.svg" alt="">
+                                </div>
+                                <span>Wide Range of Properties</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="why-you-should-cart-link d-flex">
+                                <div class="card-link">
+                                    <img src="assets/img/why-you-should/tick.svg" alt="">
+                                </div>
+                                <span>Buy or Rent Homes</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="why-you-should-cart-link d-flex">
+                                <div class="tag-icon-link">
+                                    <img src="assets/img/why-you-should/tick.svg" alt="">
+                                </div>
+                                <span>Truested by Thousands</span>
+                            </div>
+                        </div>
+                        <div class="why-you-should-learn d-flex">
+                            <span>Learn More</span>
+                            <div class="icon-learn">
+                                <img src="assets/img/why-you-should/learn.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+        integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
