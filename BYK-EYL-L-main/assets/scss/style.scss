@@ -347,6 +347,7 @@ img {
     object-fit: cover;
     max-width: 100%;
     min-width:100%;
+    background-color: FFF8F6;
 
     }
     &-two {
@@ -386,10 +387,19 @@ img {
   &-cart {
     padding: 8px;
     gap: 12px;
-
     &-link {
+      display: flex;
       padding: 8px;
       gap: 6px;
+      .cart-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #945656;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
     }
   }
   &-learn {
@@ -407,6 +417,19 @@ img {
     align-items: center;
     .icon {
       padding: 3px;
+    }
+
+    button {
+     
+      .icon-learn {
+        background-image: url("../img/why-you-should/learn.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
